@@ -3,73 +3,100 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Kutvia Security | Siber Guvenlik Cozumleri</title>
+  <title>Kutvia Security | Siber Güvenlik Çözümleri</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700;800&family=Oxanium:wght@500;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="assets/css/style.css" />
 </head>
 <body>
+  <div class="atmosphere" aria-hidden="true">
+    <span class="glow glow-left"></span>
+    <span class="glow glow-right"></span>
+  </div>
+
   <header class="site-header">
     <nav class="nav container">
       <a class="logo" href="#ana">KUTVIA SECURITY</a>
-      <button class="menu-btn" id="menuBtn" aria-expanded="false" aria-controls="navMenu" aria-label="Menu">
+      <button class="menu-btn" id="menuBtn" aria-expanded="false" aria-controls="navMenu" aria-label="Menüyü aç">
         <span></span><span></span><span></span>
       </button>
       <ul class="menu" id="navMenu">
         <li><a href="#hizmetler">Hizmetler</a></li>
-        <li><a href="#surec">Surec</a></li>
-        <li><a href="#iletisim">Iletisim</a></li>
+        <li><a href="#süreç">Süreç</a></li>
+        <li><a href="iletisim.html">İletişim</a></li>
       </ul>
     </nav>
   </header>
 
   <main id="ana">
-    <section class="hero container">
-      <p class="eyebrow">7/24 Tehdit Istihbarati</p>
-      <h1>Siber saldiri olmadan once savunmanizi kurun.</h1>
-      <p class="lead">Kutvia Security, kurumlar icin olcumlenebilir guvenlik mimarisi tasarlar. Rapor degil, sonuc odakli koruma sunar.</p>
-      <a class="btn" href="#iletisim">Ucretsiz Guvenlik Analizi</a>
+    <section class="hero container reveal">
+      <p class="eyebrow">7/24 Tehdit İstihbaratı</p>
+      <h1>Siber saldırı başlamadan önce savunmanızı görünür hâle getirin.</h1>
+      <p class="lead">Kutvia Security, kurumların dijital risklerini ölçülebilir bir planla azaltır. Sadece rapor üretmez; teknik ekiplerle birlikte kalıcı güvenlik katmanları inşa eder.</p>
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="iletisim.html">Ücretsiz Güvenlik Analizi</a>
+        <a class="btn btn-ghost" href="#hizmetler">Hizmetleri İncele</a>
+      </div>
+      <ul class="hero-metrics">
+        <li><strong>%92</strong><span>Yanlış alarm azalımı</span></li>
+        <li><strong>48 saat</strong><span>İlk risk haritası teslimi</span></li>
+        <li><strong>360°</strong><span>Saldırı yüzeyi görünürlüğü</span></li>
+      </ul>
     </section>
 
-    <section class="cards container" id="hizmetler">
-      <article class="card">
+    <section class="services container" id="hizmetler">
+      <article class="card reveal">
         <h2>Penetrasyon Testi</h2>
-        <p>Web, mobil ve API yuzeylerinde kontrollu saldiri simulasyonlariyla riskleri onceliklendiririz.</p>
+        <p>Web, mobil ve API yüzeylerinde gerçekçi saldırı senaryoları çalıştırır; iş etkisine göre önceliklendirilmiş aksiyon listesi çıkarırız.</p>
       </article>
-      <article class="card">
+      <article class="card reveal">
         <h2>SOC ve SIEM Kurulumu</h2>
-        <p>Alarm gurultusunu azaltan, dogru tehditleri one cikararak hizli mudahale saglayan izleme sistemi kurariz.</p>
+        <p>Gürültüyü azaltan izleme mimarisiyle kritik olayları öne taşır, olay müdahale süresini kısaltan çalışma akışları kurarız.</p>
       </article>
-      <article class="card">
-        <h2>Zero Trust Donusumu</h2>
-        <p>Kimlik temelli erisim modeli, segmentasyon ve politika otomasyonu ile yapinizi sertlestiririz.</p>
+      <article class="card reveal">
+        <h2>Zero Trust Dönüşümü</h2>
+        <p>Kimlik odaklı erişim politikaları, ağ segmentasyonu ve sürekli doğrulama yaklaşımıyla güvenlik duruşunu sertleştiririz.</p>
       </article>
     </section>
 
-    <section class="approach" id="surec">
-      <div class="container two-col">
-        <div>
-          <h2>Calisma Modelimiz</h2>
-          <p>Ilk hafta saldiri yuzeyini cikarir, ikinci haftadan itibaren teknik ekiplerinizle birlikte duzeltme sprintlerine geceriz.</p>
+    <section class="approach" id="süreç">
+      <div class="container approach-grid">
+        <div class="approach-copy reveal">
+          <h2>Çalışma Sürecimiz</h2>
+          <p>İlk fazda görünmeyen zayıflıkları ortaya çıkarırız. İkinci fazda ekiplerinize entegre olur, bulguları üretim etkisi oluşturmadan kapatırız.</p>
+          <a class="inline-link" href="iletisim.html">Süreci ekibinize göre planlayalım</a>
         </div>
-        <ol>
-          <li>Mimari kesif ve varlik envanteri</li>
-          <li>Saldiri patikasi modelleme</li>
-          <li>Oncelikli aciklarin kapatilmasi</li>
-          <li>Surekli dogrulama ve raporlama</li>
+        <ol class="timeline reveal">
+          <li>
+            <h3>Keşif ve Envanter</h3>
+            <p>Varlıklar, erişimler ve bağımlılıklar tek bir risk haritasında toplanır.</p>
+          </li>
+          <li>
+            <h3>Tehdit Modelleme</h3>
+            <p>Gerçek saldırı patikaları iş önceliğine göre puanlanır.</p>
+          </li>
+          <li>
+            <h3>Kapanış Sprintleri</h3>
+            <p>Kritik açıklar teknik doğrulama ile kapatılır ve yeniden test edilir.</p>
+          </li>
+          <li>
+            <h3>Sürekli Doğrulama</h3>
+            <p>Canlı izleme ve aylık iyileştirme döngüsü ile güvenlik seviyesi korunur.</p>
+          </li>
         </ol>
       </div>
     </section>
 
-    <section class="contact container" id="iletisim">
-      <h2>Altyapinizi guclendirelim</h2>
-      <p>iletisim: hello@kutvia-security.com</p>
+    <section class="cta container reveal">
+      <h2>Altyapınızı daha güçlü, daha izlenebilir ve daha dayanıklı hâle getirelim.</h2>
+      <p>İlk görüşmede mevcut risk seviyenizi net bir çerçevede aktaralım.</p>
+      <a class="btn btn-primary" href="iletisim.html">İletişim Sayfasına Geç</a>
     </section>
   </main>
 
   <footer class="footer">
-    <div class="container"><p>2026 Kutvia Security. Tum haklari saklidir.</p></div>
+    <div class="container"><p><span id="year"></span> Kutvia Security. Tüm hakları saklıdır.</p></div>
   </footer>
 
   <script src="assets/js/main.js"></script>

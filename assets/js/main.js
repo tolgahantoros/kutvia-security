@@ -2,6 +2,8 @@
 
 const menuBtn = document.getElementById('menuBtn');
 const navMenu = document.getElementById('navMenu');
+const revealItems = document.querySelectorAll('.reveal');
+const yearNode = document.getElementById('year');
 
 if (menuBtn && navMenu) {
   const closeMenu = () => {
@@ -23,5 +25,24 @@ if (menuBtn && navMenu) {
 
   window.addEventListener('resize', () => {
     if (window.innerWidth > 860) closeMenu();
+  });
+}
+
+if (yearNode) {
+  yearNode.textContent = String(new Date().getFullYear());
+}
+
+if (revealItems.length > 0) {
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (!entry.isIntersecting) return;
+      entry.target.classList.add('show');
+      observer.unobserve(entry.target);
+    });
+  }, { threshold: 0.22 });
+
+  revealItems.forEach((item, index) => {
+    item.style.animationDelay = `${Math.min(index * 0.08, 0.4)}s`;
+    observer.observe(item);
   });
 }

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>İletişim | Kutvia Security</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700;800&family=Oxanium:wght@500;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+  <div class="atmosphere" aria-hidden="true">
+    <span class="glow glow-left"></span>
+    <span class="glow glow-right"></span>
+  </div>
+
+  <header class="site-header">
+    <nav class="nav container">
+      <a class="logo" href="index.html">KUTVIA SECURITY</a>
+      <button class="menu-btn" id="menuBtn" aria-expanded="false" aria-controls="navMenu" aria-label="Menüyü aç">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="menu" id="navMenu">
+        <li><a href="index.html#hizmetler">Hizmetler</a></li>
+        <li><a href="index.html#süreç">Süreç</a></li>
+        <li><a href="iletisim.html">İletişim</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="contact-main">
+    <section class="container contact-shell">
+      <article class="contact-card reveal">
+        <p class="eyebrow">Doğrudan İletişim</p>
+        <h1>Güvenlik yol haritanızı birlikte şekillendirelim.</h1>
+        <p>Ekibinizin mevcut durumunu, öncelikli risklerini ve kısa vadede hangi adımlarla güçlenebileceğini tek görüşmede netleştirebiliriz.</p>
+
+        <div class="contact-meta">
+          <p><span>E-posta:</span> hello@kutvia-security.com</p>
+          <p><span>Telefon:</span> +90 212 000 00 00</p>
+          <p><span>Konum:</span> İstanbul</p>
+          <p><span>Çalışma Saatleri:</span> Hafta içi 09.00 - 18.00</p>
+        </div>
+      </article>
+
+      <article class="form-card reveal">
+        <h2>İletişim Formu</h2>
+        <form class="form-grid" action="#" method="post">
+          <div>
+            <label for="ad">Ad Soyad</label>
+            <input id="ad" name="ad" type="text" placeholder="Adınızı ve soyadınızı yazınız" required />
+          </div>
+          <div>
+            <label for="eposta">E-posta</label>
+            <input id="eposta" name="eposta" type="email" placeholder="ornek@kurum.com" required />
+          </div>
+          <div>
+            <label for="sirket">Şirket</label>
+            <input id="sirket" name="sirket" type="text" placeholder="Şirket adını yazınız" />
+          </div>
+          <div>
+            <label for="hizmet">Talep Edilen Hizmet</label>
+            <select id="hizmet" name="hizmet">
+              <option value="">Seçiniz</option>
+              <option value="pentest">Penetrasyon Testi</option>
+              <option value="socsiem">SOC ve SIEM Kurulumu</option>
+              <option value="zerotrust">Zero Trust Dönüşümü</option>
+              <option value="diger">Diğer</option>
+            </select>
+          </div>
+          <div>
+            <label for="mesaj">Mesajınız</label>
+            <textarea id="mesaj" name="mesaj" placeholder="İhtiyacınızı kısa ve net şekilde aktarınız"></textarea>
+          </div>
+          <button class="btn btn-primary" type="submit">Mesajı Gönder</button>
+        </form>
+      </article>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container"><p><span id="year"></span> Kutvia Security. Tüm hakları saklıdır.</p></div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
