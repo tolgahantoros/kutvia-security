@@ -46,7 +46,7 @@
 
       <article class="form-card reveal">
         <h2>İletişim Formu</h2>
-        <form class="form-grid" action="#" method="post">
+        <form class="form-grid" id="contactForm" action="#" method="post">
           <div>
             <label for="ad">Ad Soyad</label>
             <input id="ad" name="ad" type="text" placeholder="Adınızı ve soyadınızı yazınız" required />
@@ -78,6 +78,18 @@
       </article>
     </section>
   </main>
+
+  <div class="modal-backdrop" id="contactModal" aria-hidden="true">
+    <section class="modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle" aria-describedby="modalDesc">
+      <button class="modal-close" id="modalCloseBtn" type="button" aria-label="Açılır pencereyi kapat">&times;</button>
+      <p class="eyebrow">Mesajınız Alındı</p>
+      <h2 id="modalTitle">Talebiniz bize ulaştı.</h2>
+      <p id="modalDesc">Güvenlik uzmanlarımız, paylaştığınız bilgilere göre en geç 1 iş günü içinde sizinle iletişime geçecek.</p>
+      <div class="modal-actions">
+        <button class="btn btn-primary" id="modalOkBtn" type="button">Tamam</button>
+      </div>
+    </section>
+  </div>
 
   <footer class="footer">
     <div class="container"><p><span id="year"></span> Kutvia Security. Tüm hakları saklıdır.</p></div>
